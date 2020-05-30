@@ -48,7 +48,7 @@ class Navbar extends Component{
 						</button>
 					</li>
 					<Navitem
-						item="Home"
+						item="Home123"
 						tolink="/"
 						activec={this.activeItem}
 					/>
