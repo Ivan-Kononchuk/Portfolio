@@ -1,0 +1,192 @@
+@media only screen and (max-width: 885px) {
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	::selection{background-color: aqua;}
+
+	html, body{
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.App{
+	}
+
+	#bluredImg{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: -1;
+		filter: blur(5vh);
+	}
+
+	#Navbar {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		background-image: linear-gradient(aqua, #1affa7);
+		overflow-x: hidden;
+		transition: 0.35s;
+		padding: 0;
+		margin: 0;
+	}
+
+	#Navbar button{
+		background-color: rgba(0,0,0, 0);
+	}
+
+	#Navbarlink{
+		text-decoration: none;
+		color: black;
+		display: block;
+		padding: 45px 40px;
+	}
+
+	.Navbarli{
+		text-align: center;
+		font-size: 40px;
+	}
+
+	.Navbarli:hover, #closebtn:hover{
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	#openBtn{
+		font-size: 60px;
+		cursor: pointer;
+		position: absolute;
+	}
+
+	#openBtn, #closebtn{
+		background-color: rgba(0,0,0, 0);
+		border: none;
+		outline: none;
+	}
+
+	#container{
+		text-align: right;
+	}
+
+	#closebtn {
+	  padding: 48px;
+		font-size: 45px;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.Home{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 10px;
+		font-size: 30px;
+	}
+
+	.Home h1{
+		text-align: center;
+		/*margin-left: 50px;*/
+	}
+
+	.Home table{
+		box-shadow: 8px 8px 24px black;
+		margin: 15px 30px 0 0;
+		max-width: 600px;
+		text-align: center;
+		border-collapse: collapse;
+		background-color: white;
+		float: left;
+	}
+
+	.Home table tr th{
+		font-weight: normal;
+		padding: 24px;
+		background-color: #1affa7;
+	}
+
+	.Home table tr td{
+		padding: 24px;
+	}
+
+	.Home table tr td:hover{
+		background-color: rgba(26, 255, 167, 0.5);
+	}
+
+	.Home p:last-child{
+		margin-top: 12px;
+	}
+
+	.active{
+		font-weight: bold;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.social{
+		padding: 48px;
+		font-size: 45px;
+		text-align: center;
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+	}
+
+	.social a img{
+		border-radius: 50%;
+		height: 85px;
+		width: 85px;
+	}
+
+	@media only screen and (max-width: 690px)  {
+		.Home table{
+			margin: 15px auto;
+			float: none;
+		}
+	}
+
+	@media only screen and (max-width: 635px)  {
+		.Home table tr th{
+			padding: 10px;
+		}
+
+		.Home table tr td{
+			padding: 10px;
+		}
+	}
+
+	@media only screen and (max-width: 411px)  {
+		#closebtn {
+		  padding: 20px 30px;
+		}
+
+		#Navbarlink{
+			padding: 30px 25px;
+		}
+
+		.Navbarli{
+			font-size: 30px;
+		}
+
+		.Home h1{
+			font-size: 40px;
+		}
+
+		.Home p{
+			font-size: 25px;
+		}
+
+		#openBtn{
+			font-size: 40px;
+		}
+
+		.Home table tr th{
+			font-size: 25px;
+		}
+
+		.Home table tr td{
+			font-size: 25px;
+		}
+	}
+
+}
