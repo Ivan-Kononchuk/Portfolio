@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e26cfeb9.chunk.css",
-    "main.js": "/Portfolio/static/js/main.e855d1d3.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.e855d1d3.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.2c6fb4ab.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.2c6fb4ab.js.map",
-    "static/js/2.6639bea2.chunk.js": "/Portfolio/static/js/2.6639bea2.chunk.js",
-    "static/js/2.6639bea2.chunk.js.map": "/Portfolio/static/js/2.6639bea2.chunk.js.map",
-    "index.html": "/Portfolio/index.html",
-    "precache-manifest.ab5c375631d111940b9ae0cc1e8cca6f.js": "/Portfolio/precache-manifest.ab5c375631d111940b9ae0cc1e8cca6f.js",
-    "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.e26cfeb9.chunk.css.map": "/Portfolio/static/css/main.e26cfeb9.chunk.css.map",
-    "static/js/2.6639bea2.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.6639bea2.chunk.js.LICENSE.txt",
-    "static/media/bluredImg.png": "/Portfolio/static/media/bluredImg.db592233.png",
-    "static/media/gitIcon.png": "/Portfolio/static/media/gitIcon.dc322d82.png"
+    "main.css": "/Calculator-on-React/static/css/main.2b38e0ef.chunk.css",
+    "main.js": "/Calculator-on-React/static/js/main.69921c77.chunk.js",
+    "main.js.map": "/Calculator-on-React/static/js/main.69921c77.chunk.js.map",
+    "runtime-main.js": "/Calculator-on-React/static/js/runtime-main.3ee5245e.js",
+    "runtime-main.js.map": "/Calculator-on-React/static/js/runtime-main.3ee5245e.js.map",
+    "static/js/2.846e2a06.chunk.js": "/Calculator-on-React/static/js/2.846e2a06.chunk.js",
+    "static/js/2.846e2a06.chunk.js.map": "/Calculator-on-React/static/js/2.846e2a06.chunk.js.map",
+    "index.html": "/Calculator-on-React/index.html",
+    "precache-manifest.c2692d483a40d4ab2a23f2f2c735079a.js": "/Calculator-on-React/precache-manifest.c2692d483a40d4ab2a23f2f2c735079a.js",
+    "service-worker.js": "/Calculator-on-React/service-worker.js",
+    "static/css/main.2b38e0ef.chunk.css.map": "/Calculator-on-React/static/css/main.2b38e0ef.chunk.css.map",
+    "static/js/2.846e2a06.chunk.js.LICENSE.txt": "/Calculator-on-React/static/js/2.846e2a06.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2c6fb4ab.js",
-    "static/js/2.6639bea2.chunk.js",
-    "static/css/main.e26cfeb9.chunk.css",
-    "static/js/main.e855d1d3.chunk.js"
+    "static/js/runtime-main.3ee5245e.js",
+    "static/js/2.846e2a06.chunk.js",
+    "static/css/main.2b38e0ef.chunk.css",
+    "static/js/main.69921c77.chunk.js"
   ]
 }
