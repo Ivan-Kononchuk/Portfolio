@@ -6,7 +6,7 @@ class Social extends Component{
 		return(
 			<div className="social">
 				<a rel="noopener noreferrer"
-					 href="https://github.com/Noname344"
+					 href="https://github.com/Ivan-Kononchuk"
 					 target='_blank'> 
 					<img onClick={this.props.onClick} src={gitIcon} alt="gitIcon"/>
 				</a>
