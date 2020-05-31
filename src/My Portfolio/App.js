@@ -17,13 +17,13 @@ function App(){
 			<div className="App">
 				<Navbar />
 				<img id='bluredImg' src={bluredImg} alt=""/>
-				<Route exact path='/'>
+				<Route exact path='/Portfolio'>
 					<Home/>
 				</Route>
-				<Route exact path='/projects'>
+				<Route exact path='/Portfolio/projects'>
 					<Calculator/>
 				</Route>
-				<Route exact path='/contact'>
+				<Route exact path='/Portfolio/contact'>
 					<Contact/>
 				</Route>
 			</div>
