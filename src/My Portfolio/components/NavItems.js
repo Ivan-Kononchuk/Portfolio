@@ -17,5 +17,3 @@ class Navitem extends Component{
 }
 
 export default Navitem;
-
-// what if I remove li?
