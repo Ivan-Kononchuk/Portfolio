@@ -49,7 +49,7 @@ class Navbar extends Component{
 					</li>
 					<Navitem
 						item="Home"
-						tolink="/"
+						tolink="Portfolio/"
 						activec={this.activeItem}
 					/>
 					<Navitem
