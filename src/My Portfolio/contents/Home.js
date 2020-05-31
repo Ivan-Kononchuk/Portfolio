@@ -37,8 +37,7 @@ class About extends Component{
 				</table>
 				<p>
 				Also, I don't forget about English and interacting with it as much
-				as I can, but programming skills are my rank one priority. English
-				level approximately B2.
+				as I can. English	level approximately B2.
 				</p>
 			</div>
 		);
