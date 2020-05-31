@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.e26cfeb9.chunk.css",
+    "main.js": "/Portfolio/static/js/main.34789c79.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.34789c79.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.2c6fb4ab.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.2c6fb4ab.js.map",
+    "static/js/2.6639bea2.chunk.js": "/Portfolio/static/js/2.6639bea2.chunk.js",
+    "static/js/2.6639bea2.chunk.js.map": "/Portfolio/static/js/2.6639bea2.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.eb5cc2442d7198a3b9301c48e0a486c6.js": "/Portfolio/precache-manifest.eb5cc2442d7198a3b9301c48e0a486c6.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.e26cfeb9.chunk.css.map": "/Portfolio/static/css/main.e26cfeb9.chunk.css.map",
+    "static/js/2.6639bea2.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.6639bea2.chunk.js.LICENSE.txt",
+    "static/media/bluredImg.png": "/Portfolio/static/media/bluredImg.db592233.png",
+    "static/media/gitIcon.png": "/Portfolio/static/media/gitIcon.dc322d82.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2c6fb4ab.js",
+    "static/js/2.6639bea2.chunk.js",
+    "static/css/main.e26cfeb9.chunk.css",
+    "static/js/main.34789c79.chunk.js"
+  ]
+}
