@@ -9,7 +9,7 @@ import Navbar from './components/Navbar.js';
 import Home from './contents/Home.js';
 import Calculator from './contents/Projects.js'
 import Contact from './contents/Contact.js';
-import bluredImg from './img/bluredImg.png';
+import bluredImg from './img/bluredImg.jpg';
 
 function App(){
 	return(
@@ -17,7 +17,7 @@ function App(){
 			<div className="App">
 				<Navbar />
 				<img id='bluredImg' src={bluredImg} alt=""/>
-				<Route exact path='/Portfolio'>
+				<Route exact path='/Portfolio/'>
 					<Home/>
 				</Route>
 				<Route exact path='/Portfolio/projects'>
