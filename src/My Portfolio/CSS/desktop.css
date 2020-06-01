@@ -106,8 +106,8 @@
 
 	.gitIcon a img{
 		border-radius: 50%;
-		height: 85px;
-		width: 85px;
+		max-height: 85px;
+		max-width: 85px;
 	}
 
 	@media only screen and (max-width: 1359px) {
