@@ -121,7 +121,7 @@
 		background-color: rgba(0, 0, 0, 0.1);
 	}
 
-	.social{
+	.gitIcon{
 		padding: 48px;
 		font-size: 45px;
 		text-align: center;
@@ -131,7 +131,7 @@
 		right: 0;
 	}
 
-	.social a img{
+	.gitIcon a img{
 		border-radius: 50%;
 		height: 85px;
 		width: 85px;

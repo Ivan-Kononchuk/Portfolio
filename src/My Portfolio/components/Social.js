@@ -4,7 +4,7 @@ import gitIcon from '../img/gitIcon.png';
 class Social extends Component{
 	render(){
 		return(
-			<div className="social">
+			<div className="gitIcon">
 				<a rel="noopener noreferrer"
 					 href="https://github.com/Ivan-Kononchuk"
 					 target='_blank'> 
