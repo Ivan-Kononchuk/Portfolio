@@ -31,6 +31,7 @@
 		width: 220px;
 		position: fixed;
 		background-image: linear-gradient(aqua, #1affa7);
+		user-select: none;
 	}
 
 	#Navbarlink{
