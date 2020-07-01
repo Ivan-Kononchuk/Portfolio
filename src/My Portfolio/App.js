@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route, Switch
+  Route, Switch, Redirect
 } from "react-router-dom";
 import './CSS/desktop.css';
 import './CSS/mobile.css';
@@ -19,7 +19,10 @@ function App(){
 				<Navbar />
 				<img id='bluredImg' src={bluredImg} alt=""/>
 				<Switch>
-					<Route exact path='/Portfolio'>
+					<Route exact path="/Portfolio">
+					  <Redirect to="/Portfolio/projects" />
+					</Route>
+					<Route exact path='/Portfolio/projects'>
 						<Projects/>
 					</Route>
 					<Route exact path='/Portfolio/Skills_N_Contact'>
