@@ -1,5 +1,5 @@
 import React, {Fragment, Component} from 'react';
-import Navitem from './NavItems.js';
+import {NavLink} from 'react-router-dom';
 import Social from './Social.js';
 
 class Navbar extends Component{
@@ -7,7 +7,8 @@ class Navbar extends Component{
 		super(props);
 		this.state={
 			NavItemActive: '',
-			width: ''
+			width: '',
+			overflow: ''
 		};
 	}
 
@@ -15,24 +16,15 @@ class Navbar extends Component{
 		this.setState({
 			width: '100%'
 		});
+		document.body.style.overflow= 'hidden';
 	}
 
 	closeNav=()=>{
 		this.setState({
-			width: ''
+			width: '',
+			overflow: ''
 		});
-	}
-
-	activeItem=x=>{
-		if(this.state.NavItemActive.length>0){
-			document.getElementById(this.state.NavItemActive).classList.remove('active');
-		}
-		this.setState({
-			NavItemActive: x},
-			()=>{document.getElementById(this.state.NavItemActive).classList.add('active');
-		});
-		
-		this.closeNav();
+		document.body.style.overflow= 'visible';
 	}
 
 	render(){
@@ -41,28 +33,35 @@ class Navbar extends Component{
 				<button onClick={this.openNav} id='openBtn'>
 					&#9776;
 				</button>
-				<ul id='Navbar' style={{width: this.state.width}}>
+				<ul id='Navbar' style={{
+					width: this.state.width
+				}}>
 					<li id='container'>
 						<button id='closebtn' onClick={this.closeNav} >
 							&times;
 						</button>
 					</li>
-					<Navitem
-						item="Home"
-						tolink="/Portfolio/"
-						activec={this.activeItem}
-					/>
-					<Navitem
-						item="Projects"
-						tolink="/Portfolio/projects"
-						activec={this.activeItem}
-					/>
-					<Navitem
-						item="Contact"
-						tolink="/Portfolio/contact"
-						activec={this.activeItem}
-					/>
+
+					<li className='Navbarli'>
+						<NavLink className='Navbarlink' activeClassName="active"
+							onClick={this.closeNav}
+							to="/Portfolio/Projects"
+						>
+							Projects
+						</NavLink>
+					</li>
+
+					<li className='Navbarli'>
+						<NavLink className='Navbarlink' activeClassName="active"
+							onClick={this.closeNav}
+							to='/Portfolio/Skills_N_Contact'
+						>
+							Skills & Contact
+						</NavLink>
+					</li>
+
 					<Social onClick={this.closeNav} />
+
 				</ul>
 			</Fragment>
 		);
