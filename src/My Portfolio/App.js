@@ -9,7 +9,6 @@ import Navbar from './components/Navbar.js';
 import SkillsContact from './contents/Skills_N_Contact.js';
 import Projects from './contents/Projects.js';
 import Calculator from './projects/Calculator/CalculatorApp.js';
-// import Contact from './contents/Contact.js';
 import bluredImg from './img/bluredImg.jpg';
 import Gallery from './projects/Black-Google/App.js';
 
