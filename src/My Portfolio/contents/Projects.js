@@ -52,8 +52,8 @@ class Projects extends Component{
 				</div>
 
 				<div className="BlackBackgroundContenteiner">
-					<img src="https://i.ibb.co/VMfVcvt/image.png" alt="Black Chrome"
-							 id='BlackChromeBackground'
+					<img src="https://user-images.githubusercontent.com/44400566/86442225-1d7ec980-bd16-11ea-9b43-1d94283bc1c1.jpg"
+							 alt="Black Chrome" id='BlackChromeBackground'
 							 className='ImageBackground'/>
 					<div className='BlackBackgroundContent'>
 						<h1 className='BlackBackgroundHeader'>Black Chrome Theme</h1>
@@ -67,8 +67,8 @@ class Projects extends Component{
 				</div>
 
 				<div className="BlackBackgroundContenteiner">
-					<img src="https://i.ibb.co/BwB2mdZ/image.png" alt="Black Google"
-							 className='ImageBackground'/>
+					<img src="https://user-images.githubusercontent.com/44400566/86440326-eeb32400-bd12-11ea-9b7d-356660024489.jpg"
+							 alt="Black Google" className='ImageBackground'/>
 					<div className='BlackBackgroundContent'>
 						<h1 className='BlackBackgroundHeader'>Black Google Theme</h1>
 						<Link to='/Portfolio/projects/Black-Google'

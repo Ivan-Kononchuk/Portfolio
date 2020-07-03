@@ -45,7 +45,7 @@ class Navbar extends Component{
 					<li className='Navbarli'>
 						<NavLink className='Navbarlink' activeClassName="active"
 							onClick={this.closeNav}
-							to="/Portfolio/Projects"
+							to="/Portfolio"
 						>
 							Projects
 						</NavLink>
