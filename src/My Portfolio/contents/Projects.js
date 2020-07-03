@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import calcImage from '../projects/Calculator/CalculatorImg.jpg';
+import blackChrome from '../projects/Black-Chrome/56756.jpg';
+import blackGoogle from '../projects/Black-Google/Images/1.jpg';
 
 class Projects extends Component{
 	openFullScreen(){
@@ -38,7 +41,7 @@ class Projects extends Component{
 
 				<div className='projectContainer'>
 					<div id="calcAlign">
-						<img id='calcImage' src='https://i.ibb.co/9c6d4pn/te.png' alt="Calculator"/>
+						<img id='calcImage' src={calcImage} alt="Calculator"/>
 					</div>
 					<div className="calculatorContent">
 						<h1 className='fullWidth'>Calculator on React</h1>
@@ -52,7 +55,7 @@ class Projects extends Component{
 				</div>
 
 				<div className="BlackBackgroundContenteiner">
-					<img src="https://user-images.githubusercontent.com/44400566/86442225-1d7ec980-bd16-11ea-9b43-1d94283bc1c1.jpg"
+					<img src={blackChrome}
 							 alt="Black Chrome" id='BlackChromeBackground'
 							 className='ImageBackground'/>
 					<div className='BlackBackgroundContent'>
@@ -67,7 +70,7 @@ class Projects extends Component{
 				</div>
 
 				<div className="BlackBackgroundContenteiner">
-					<img src="https://user-images.githubusercontent.com/44400566/86440326-eeb32400-bd12-11ea-9b7d-356660024489.jpg"
+					<img src={blackGoogle}
 							 alt="Black Google" className='ImageBackground'/>
 					<div className='BlackBackgroundContent'>
 						<h1 className='BlackBackgroundHeader'>Black Google Theme</h1>

@@ -1,13 +1,22 @@
 import React from 'react';
+import first from './Images/1.jpg';
+import second from './Images/2.jpg';
+import third from './Images/3.jpg';
+import fourth from './Images/4.jpg';
+import fifth from './Images/5.jpg';
+import sixth from './Images/6.jpg';
+import seventh from './Images/7.jpg';
+import eighth from './Images/8.jpg';
 
-const imgUrls = ['https://user-images.githubusercontent.com/44400566/86440326-eeb32400-bd12-11ea-9b7d-356660024489.jpg',
-'https://user-images.githubusercontent.com/44400566/86440340-f7a3f580-bd12-11ea-9b44-aa1437507cef.jpg',
-'https://user-images.githubusercontent.com/44400566/86440341-f7a3f580-bd12-11ea-9454-77bfd0d816d7.jpg',
-'https://user-images.githubusercontent.com/44400566/86440342-f7a3f580-bd12-11ea-9f16-eb9655b79ee1.jpg',
-'https://user-images.githubusercontent.com/44400566/86440343-f83c8c00-bd12-11ea-8741-1d6283001fa8.jpg',
-'https://user-images.githubusercontent.com/44400566/86440345-f83c8c00-bd12-11ea-8edb-c6fe7f34a596.jpg',
-'https://user-images.githubusercontent.com/44400566/86440346-f83c8c00-bd12-11ea-96ed-990b16e14a31.jpg',
-'https://user-images.githubusercontent.com/44400566/86440339-f672c880-bd12-11ea-899c-28907042a656.jpg'
+const imgUrls = [
+first,
+second,
+third,
+fourth, 
+fifth,
+sixth,
+seventh,
+eighth
 ];
 
 class Gallery extends React.Component {
@@ -123,4 +132,3 @@ class GalleryModal extends React.Component {
 }
 
 export default Gallery;
-
