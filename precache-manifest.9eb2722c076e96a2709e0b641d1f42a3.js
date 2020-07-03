@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7b53ed21ef80b74024606a3aa5fd451",
+    "revision": "c2ed1aaead5a07ce44611ee8f4cb4780",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "a371df18a07707d02803",
-    "url": "/Portfolio/static/css/main.24134521.chunk.css"
+    "revision": "13e17ee7750730ae86a4",
+    "url": "/Portfolio/static/css/main.d7c0f41a.chunk.css"
   },
   {
-    "revision": "9b3117efff74502719d2",
-    "url": "/Portfolio/static/js/2.6406dfa1.chunk.js"
+    "revision": "97635578cd22960abc7f",
+    "url": "/Portfolio/static/js/2.ceaa8c85.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Portfolio/static/js/2.6406dfa1.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.ceaa8c85.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a371df18a07707d02803",
-    "url": "/Portfolio/static/js/main.a5d1a1fe.chunk.js"
+    "revision": "13e17ee7750730ae86a4",
+    "url": "/Portfolio/static/js/main.4813dad2.chunk.js"
   },
   {
     "revision": "98dd43d24659fb8d7782",
@@ -44,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/5.07edc018.jpg"
   },
   {
+    "revision": "7dc81e89350815c1d35cf8d8fa0e1bc5",
+    "url": "/Portfolio/static/media/56756.7dc81e89.jpg"
+  },
+  {
     "revision": "2e971e5b052ad9bab5c8ea9856b0debd",
     "url": "/Portfolio/static/media/6.2e971e5b.jpg"
   },
@@ -56,8 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/8.7bb32ac8.jpg"
   },
   {
-    "revision": "0b3f0989edfb8e40ff18bbbaa660b8a5",
-    "url": "/Portfolio/static/media/bluredImg.0b3f0989.jpg"
+    "revision": "e9f5604cbac362e01e4ad91dd35cbaba",
+    "url": "/Portfolio/static/media/CalculatorImg.e9f5604c.jpg"
+  },
+  {
+    "revision": "17441f72dcc61d6b3c66b9db6efb7c42",
+    "url": "/Portfolio/static/media/bluredImg.17441f72.jpg"
   },
   {
     "revision": "f3db75059346b0fc4f44e1ab30974654",
