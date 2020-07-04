@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import MailForm from './mail-form.js';
+import MailForm from '../components/mail-form.js';
 
-export default class Skills_ extends Component{
+export default class Skills_N_Contact extends Component{
 	constructor(props){
 	super(props);
 	this.copyMail= this.copyMail.bind(this);
@@ -14,8 +14,12 @@ export default class Skills_ extends Component{
 		document.execCommand('copy');
 		mail.setAttribute('type', 'hidden');
 		
-		document.getElementById('gmail-span').textContent= 'Copy';
-		document.getElementById('email-span').textContent= 'Copy'; 
+		document.getElementById('gmail-span').textContent= 'Copy'; 
+		document.getElementById('email-span').textContent= 'Copy';
+
+		document.getElementById('gmail').value= 'myyzrik@gmail.com';
+		document.getElementById('email').value= 'zoibertonfd@mail.ru';
+		// anti bot mail spam
 
 		const tooltip= document.getElementById(spanId);
 		tooltip.textContent= 'Copied!';
@@ -41,14 +45,14 @@ export default class Skills_ extends Component{
 						<button onClick={e=> this.copyMail('email', 'email-span')}
 										className='projectLink'>Email</button>
 						<span className='tooltiptext' id='email-span'>Copy</span>
-						<input type='hidden' id='email' value='zoibertonfd@mail.ru'/>
+						<input type='hidden' id='email' value=''/>
 					</div>
 
 					<div className="tooltip">
 						<button onClick={e=> this.copyMail('gmail', 'gmail-span')}
 										className='projectLink'>Gmail</button>
 						<span className="tooltiptext" id='gmail-span'>Copy</span>
-						<input type='hidden' id='gmail' value='myyzrik@gmail.com'/>
+						<input type='hidden' id='gmail' value=''/>
 					</div>
 				</div>
 
