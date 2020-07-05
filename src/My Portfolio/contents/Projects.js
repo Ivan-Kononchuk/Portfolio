@@ -45,7 +45,7 @@ class Projects extends Component{
 					</div>
 					<div className="calculatorContent">
 						<h1 className='fullWidth'>Calculator on React</h1>
-						<Link to="/Portfolio/projects/calculator"
+						<Link to="/Portfolio/Projects/Calculator"
 									className='projectLink r-offset'>Try it</Link>
 						<a rel='noopener noreferrer'
 							 href="https://github.com/Ivan-Kononchuk/Calculator-on-React"
@@ -74,7 +74,7 @@ class Projects extends Component{
 							 alt="Black Google" className='ImageBackground'/>
 					<div className='BlackBackgroundContent'>
 						<h1 className='BlackBackgroundHeader'>Black Google Theme</h1>
-						<Link to='/Portfolio/projects/Black-Google'
+						<Link to='/Portfolio/Projects/Black-Google'
 									className='projectLink projectLink2'>See more</Link>
 						<a rel='noopener noreferrer'
 							 href="https://github.com/Ivan-Kononchuk/Black-Google"

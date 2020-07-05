@@ -42,7 +42,6 @@
 		width: 220px !important;
 		position: fixed;
 		background-image: linear-gradient(aqua, #1affa7);
-		list-style-type: none;
 	}
 
 	.Navbarlink{
@@ -60,18 +59,15 @@
 		-ms-user-drag: none;
 		-o-user-drag: none;
 		user-drag: none;
-	}
-
-	.Navbarli{
-		text-align: center;
 		font-size: 40px;
+		text-align: center;
 	}
 
-	.Navbarli:hover{
+	.Navbarlink:hover{
 		background-color: rgba(0, 0, 0, 0.1);
 	}
 
-	#container{
+	#alignRight{
 		display: none;
 	}
 
@@ -111,10 +107,6 @@
 	.active{
 		font-weight: bold;
 		background-color: rgba(0, 0, 0, 0.1);
-	}
-
-	.active:hover{
-		background-color: rgba(0, 0, 0, 0);
 	}
 
 	.gitIcon{

@@ -22,16 +22,16 @@ function App(){
 					<Route exact path="/Portfolio">
 					  <Redirect to="/Portfolio/projects" />
 					</Route>
-					<Route exact path='/Portfolio/projects'>
+					<Route exact path='/Portfolio/Projects'>
 						<Projects/>
 					</Route>
 					<Route exact path='/Portfolio/Skills_N_Contact'>
 						<SkillsContact/>
 					</Route>
-					<Route exact path='/Portfolio/projects/calculator'>
+					<Route exact path='/Portfolio/Projects/Calculator'>
 						<Calculator/>
 					</Route>
-					<Route exact path='/Portfolio/projects/Black-Google'>
+					<Route exact path='/Portfolio/Projects/Black-Google'>
 						<Gallery/>
 					</Route>
 				</Switch>

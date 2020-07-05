@@ -108,7 +108,8 @@ class GalleryModal extends React.Component {
   }
   
   render () {
-    const { closeModal, hasNext, hasPrev, findNext, findPrev, src } = this.props;
+    const {closeModal, hasNext, hasPrev, findNext, findPrev, src}
+    = this.props;
     if (!src) {
       return null;
     }

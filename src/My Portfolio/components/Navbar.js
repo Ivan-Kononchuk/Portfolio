@@ -30,37 +30,33 @@ class Navbar extends Component{
 	render(){
 		return(
 			<Fragment>
-				<button onClick={this.openNav} id='openBtn'>
-					&#9776;
-				</button>
-				<ul id='Navbar' style={{
-					width: this.state.width
-				}}>
-					<li id='container'>
+
+				<button onClick={this.openNav} id='openBtn'> &#9776; </button>
+
+				<nav id='Navbar' style={{ width: this.state.width }}>
+
+					<div id='alignRight'>
 						<button id='closebtn' onClick={this.closeNav} >
 							&times;
 						</button>
-					</li>
-
-					<li className='Navbarli'>
-						<NavLink className='Navbarlink' activeClassName="active"
-							onClick={this.closeNav}
-							to="/Portfolio/Projects">
-							Projects
-						</NavLink>
-					</li>
-
-					<li className='Navbarli'>
-						<NavLink className='Navbarlink' activeClassName="active"
-							onClick={this.closeNav}
-							to='/Portfolio/Skills_N_Contact'>
-							Skills & Contact
-						</NavLink>
-					</li>
+					</div>
+					
+					<NavLink className='Navbarlink' activeClassName="active"
+						onClick={this.closeNav}
+						to="/Portfolio/Projects">
+						Projects
+					</NavLink>
+				
+					<NavLink className='Navbarlink' activeClassName="active"
+						onClick={this.closeNav}
+						to='/Portfolio/Skills_N_Contact'>
+						Skills & Contact
+					</NavLink>
 
 					<Social onClick={this.closeNav} />
 
-				</ul>
+				</nav>
+
 			</Fragment>
 		);
 	}

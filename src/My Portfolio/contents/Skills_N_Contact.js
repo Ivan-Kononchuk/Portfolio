@@ -17,9 +17,9 @@ export default class Skills_N_Contact extends Component{
 		document.getElementById('gmail-span').textContent= 'Copy'; 
 		document.getElementById('email-span').textContent= 'Copy';
 
+		// anti bot mail spam
 		document.getElementById('gmail').value= 'myyzrik@gmail.com';
 		document.getElementById('email').value= 'zoibertonfd@mail.ru';
-		// anti bot mail spam
 
 		const tooltip= document.getElementById(spanId);
 		tooltip.textContent= 'Copied!';

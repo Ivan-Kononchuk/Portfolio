@@ -45,14 +45,11 @@
 		-ms-user-drag: none;
 		-o-user-drag: none;
 		user-drag: none;
-	}
-
-	.Navbarli{
 		text-align: center;
 		font-size: 40px;
 	}
 
-	.Navbarli:hover, #closebtn:hover{
+	.Navbarlink:hover, #closebtn:hover{
 		background-color: rgba(0, 0, 0, 0.1);
 	}
 
@@ -86,14 +83,14 @@
 		user-drag: none;
 	}
 
-	#container{
+	#alignRight{
 		text-align: right;
 	}
 
 	#closebtn {
 	  padding: 48px;
 		font-size: 45px;
-		display: inline-block;
+		right: 0;
 		cursor: pointer;
 	}
 
@@ -136,10 +133,6 @@
 	.active{
 		font-weight: bold;
 		background-color: rgba(0, 0, 0, 0.1);
-	}
-
-	.active:hover{
-		background-color: rgba(0, 0, 0, 0);
 	}
 
 	.gitIcon{
@@ -304,7 +297,6 @@
 		flex-wrap: wrap;
 		background-image: radial-gradient(circle,
 		rgba(255,255,255, .3)30%, rgba(0,0,0,0)75%);
-		/*margin-bottom: 20px;*/
 		position: absolute;
 		z-index: 1;
 	}
@@ -511,9 +503,6 @@
 
 		#Navbarlink{
 			padding: 30px 25px;
-		}
-
-		.Navbarli{
 			font-size: 30px;
 		}
 

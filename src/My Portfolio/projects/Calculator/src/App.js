@@ -18,6 +18,7 @@ class App extends Component{
 			if (x.toString().length > 17 && !/\./.test(x)){
 				x= x.toPrecision(17)
 			}else if (x.toString().length > 17 && /\./.test(x)){
+				// eslint-disable-next-line
 				x= eval(x.toFixed(16))
 			}
 			
