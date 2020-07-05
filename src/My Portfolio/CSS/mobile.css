@@ -461,7 +461,6 @@
 		height: 271px;
 	}
 
-
 	.narrow{
 		width: 100%;
 		display: -webkit-flex;
@@ -501,7 +500,7 @@
 		  padding: 20px 30px;
 		}
 
-		#Navbarlink{
+		.Navbarlink{
 			padding: 30px 25px;
 			font-size: 30px;
 		}
