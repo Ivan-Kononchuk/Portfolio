@@ -1,7 +1,7 @@
 import React from 'react';
 import gitIcon from '../img/gitIcon.png';
 
-function Social(props){
+export default function Social(props){
 	return(
 		<div className="gitIcon">
 			<a rel="noopener noreferrer"
@@ -12,5 +12,3 @@ function Social(props){
 		</div>
 	);
 }
-
-export default Social;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function KeyPadComponent(props){
+export default function KeyPadComponent(props){
 	return(
 		<div className="button">
 			<button name='(' onClick={e=> props.onClick(e.target.name)}>(</button>
@@ -31,5 +31,3 @@ function KeyPadComponent(props){
 		</div>
 	);
 }
-
-export default KeyPadComponent;

@@ -2,7 +2,7 @@ import React, {Fragment, Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import Social from './Social.js';
 
-class Navbar extends Component{
+export default class Navbar extends Component{
 	constructor(props){
 		super(props);
 		this.state={
@@ -61,5 +61,3 @@ class Navbar extends Component{
 		);
 	}
 }
-
-export default Navbar;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ResultComponent(props){
+export default function ResultComponent(props){
 	var {result} = props;
 	return (
 		<div className="result">
@@ -8,6 +8,3 @@ function ResultComponent(props){
 		</div>
 	);
 }
-
-
-export default ResultComponent;

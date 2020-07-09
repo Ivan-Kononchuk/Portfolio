@@ -32,7 +32,7 @@ class Gallery extends React.Component {
   renderImageContent(src, index) {
     return (
       <img onClick={(e) => this.openModal(e, index)} src={src} key={src}
-      alt='Black Goggle' className='googleImages pointer'/>
+      alt='Black Google' className='googleImages pointer'/>
     ) 
   }
 
