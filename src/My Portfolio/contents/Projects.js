@@ -4,26 +4,26 @@ import calcImage from '../projects/Calculator/CalculatorImg.jpg';
 import blackChrome from '../projects/Black-Chrome/56756.jpg';
 import blackGoogle from '../projects/Black-Google/Images/1.jpg';
 
-class Projects extends Component{
+export default class Projects extends Component{
 	openFullScreen(){
-		var elem= document.getElementById('BlackChromeBackground');
+		let elem= document.getElementById('BlackChromeBackground');
 		elem.classList.add('enlarge');
 		document.body.style.overflow= 'hidden';
 	}
 
 	closeFullScreen(){
-		var elem= document.getElementById('BlackChromeBackground');
+		let elem= document.getElementById('BlackChromeBackground');
 		elem.classList.remove('enlarge');
 		document.body.style.overflow= 'visible';
 	}
 
 	componentDidMount(){
-		var elem= document.getElementById('BlackChromeBackground');
+		let elem= document.getElementById('BlackChromeBackground');
 		elem.addEventListener('click', this.closeFullScreen);
 	}
 
 	componentWillUnmount(){
-		var elem= document.getElementById('BlackChromeBackground');
+		let elem= document.getElementById('BlackChromeBackground');
 		elem.removeEventListener('click', this.closeFullScreen);
 	}
 
@@ -87,5 +87,3 @@ class Projects extends Component{
 		);
 	}
 }
-
-export default Projects;

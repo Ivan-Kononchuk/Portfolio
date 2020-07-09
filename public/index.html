@@ -19,5 +19,17 @@
       emailjs.init("user_y22gfSKWDxctAXGmPgNql");
    })();
 </script>
+
+<script type="text/javascript">
+window.addEventListener('mousedown', function(){
+  document.body.classList.remove('kbd-navigation');
+});
+
+window.addEventListener('keydown', function(e){
+  if(e.keyCode === 9){
+    document.body.classList.add('kbd-navigation');
+  }
+});
+</script>
 </body>
 </html>

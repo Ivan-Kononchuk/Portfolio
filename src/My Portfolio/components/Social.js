@@ -7,7 +7,10 @@ export default function Social(props){
 			<a rel="noopener noreferrer"
 				 href="https://github.com/Ivan-Kononchuk"
 				 target='_blank'> 
-				<img onClick={props.onClick} src={gitIcon} alt="gitIcon"/>
+				<img onClick={props.onClick}
+						 src={gitIcon}
+						 alt="gitIcon"
+						 />
 			</a>
 		</div>
 	);

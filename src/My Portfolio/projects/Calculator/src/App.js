@@ -15,9 +15,9 @@ export default class App extends Component{
 		try {
 			// eslint-disable-next-line
 			var x= eval(this.state.result);
-			if (x.toString().length > 17 && !/\./.test(x)){
-				x= x.toPrecision(17)
-			}else if (x.toString().length > 17 && /\./.test(x)){
+			if (x.toString().length > 16 && !/\./.test(x)){
+				x= x.toPrecision(16)
+			}else if (x.toString().length > 16 && /\./.test(x)){
 				// eslint-disable-next-line
 				x= eval(x.toFixed(16))
 			}

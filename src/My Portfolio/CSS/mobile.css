@@ -485,6 +485,16 @@
 		flex-wrap: wrap;
 	}
 
+	@media only screen and (max-height: 500px){
+		#calcAlign{
+			height: 60%;
+		}
+
+		.fullWidth{
+			margin-top: 10px;
+		}
+	}
+
 	@media only screen and (max-width: 635px)  {
 		.Content table tr th{
 			padding: 10px;
@@ -503,14 +513,6 @@
 		.Navbarlink{
 			padding: 30px 25px;
 			font-size: 30px;
-		}
-
-		.Content h1{
-			font-size: 40px;
-		}
-
-		.Content p{
-			font-size: 25px;
 		}
 
 		.Content table tr th{

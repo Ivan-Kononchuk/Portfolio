@@ -1,6 +1,6 @@
 import React from 'react';
 
-class MailForm extends React.Component{
+export default class MailForm extends React.Component{
 	constructor(props){
 	super(props);
 	this.state = { message: ''};
@@ -14,9 +14,9 @@ class MailForm extends React.Component{
   }
 
   handleSubmit(e){
-	e.preventDefault(); // prevent reload page
-	const templateId = 'template_w1dmWdUc';
-	this.sendFeedback(templateId, {message_html: this.state.message})
+		e.preventDefault(); // prevent reload page
+		const templateId = 'template_w1dmWdUc';
+		this.sendFeedback(templateId, {message_html: this.state.message});
   }
 
 	transition2(style){
@@ -44,9 +44,9 @@ class MailForm extends React.Component{
 	}
 
   sendFeedback(templateId, variables){
-	window.emailjs.send(
-  	'gmail', templateId,
-  	variables
+		window.emailjs.send(
+	  	'gmail', templateId,
+	  	variables
   	).then(res =>{
   		this.sendEffect();
   	})
@@ -68,5 +68,3 @@ class MailForm extends React.Component{
   	);
   }
 }
-
-export default MailForm;

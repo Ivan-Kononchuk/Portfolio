@@ -19,7 +19,7 @@ seventh,
 eighth
 ];
 
-class Gallery extends React.Component {
+export default class Gallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = { currentIndex: null };
@@ -131,5 +131,3 @@ class GalleryModal extends React.Component {
     )
   }
 }
-
-export default Gallery;

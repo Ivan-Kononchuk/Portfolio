@@ -1,8 +1,3 @@
-html, body{
-	box-sizing: border-box;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
 .calculator-body{
 	position: absolute;
 	top: 50%;
@@ -16,7 +11,8 @@ html, body{
 }
 
 .result{
-	background-image: linear-gradient(rgba(0,255,255,.35), rgb(25, 255, 167, .35));
+	background-image: linear-gradient(rgba(0,255,255,.35),
+		rgb(25, 255, 167, .35));
 	margin-bottom: 10px;
 	border-radius: 20px;
 	width: 100%;
@@ -24,6 +20,7 @@ html, body{
 	text-align: right;
 	word-break: break-all;
 	overflow: hidden;
+	outline: none;
 }
 
 .result p{
@@ -65,7 +62,8 @@ html, body{
 }
 
 .button button:hover{
-	background-image: linear-gradient(rgba(0,255,255,.95), rgb(25, 255, 167, .95));
+	background-image: linear-gradient(rgba(0,255,255,.95),
+		rgb(25, 255, 167, .95));
 }
 
 .button button:active{
@@ -82,9 +80,47 @@ html, body{
 	grid-row: span 2;
 }
 
-.kbd-navigation button:focus{
-	-webkit-box-shadow: 0 12px 5px rgba(0,0,0, .9);
-	box-shadow: 0 8px 5px rgba(0,0,0, .9);
+.button .Backspace{
+	font-size: 38px;
+	padding: 0;
+}
+
+.button .asterisk{
+	font-size: 45px;
+	padding: 0;
+}
+
+.button .dash{
+	font-size: 36px;
+	padding: 0;
+}
+
+.button .minus{
+	font-size: 55px;
+	padding: 0;
+	padding-bottom: 9px;
+}
+
+.button .plus{
+	font-size: 53px;
+	padding: 0;
+	font-weight: normal;
+}
+
+.button .equals{
+	font-size: 40px;
+	padding: 0;
+}
+
+.button .dot{
+	font-size: 45px;
+	padding: 0;
+}
+
+@media only screen and (max-width: 885px) {
+	.calculator-body{
+		margin-top: 30px;
+	}
 }
 
 @media only screen and (max-width: 415px) {
