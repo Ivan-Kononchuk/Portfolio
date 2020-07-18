@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9d135b3d.chunk.css",
-    "main.js": "/Portfolio/static/js/main.e6e4e9f7.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.e6e4e9f7.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.aa928abd.chunk.css",
+    "main.js": "/Portfolio/static/js/main.88e327c7.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.88e327c7.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.657ad8a3.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.657ad8a3.js.map",
     "static/js/2.33298918.chunk.js": "/Portfolio/static/js/2.33298918.chunk.js",
     "static/js/2.33298918.chunk.js.map": "/Portfolio/static/js/2.33298918.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.b84b2d3a05892971a2fe5ed053a5656b.js": "/Portfolio/precache-manifest.b84b2d3a05892971a2fe5ed053a5656b.js",
+    "precache-manifest.720092468489aedee8cf7bb58fc1dff1.js": "/Portfolio/precache-manifest.720092468489aedee8cf7bb58fc1dff1.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.9d135b3d.chunk.css.map": "/Portfolio/static/css/main.9d135b3d.chunk.css.map",
+    "static/css/main.aa928abd.chunk.css.map": "/Portfolio/static/css/main.aa928abd.chunk.css.map",
     "static/js/2.33298918.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.33298918.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/Portfolio/static/media/1.c5e2465c.jpg",
     "static/media/2.jpg": "/Portfolio/static/media/2.07da2614.jpg",
@@ -21,14 +21,14 @@
     "static/media/6.jpg": "/Portfolio/static/media/6.2e971e5b.jpg",
     "static/media/7.jpg": "/Portfolio/static/media/7.c3754396.jpg",
     "static/media/8.jpg": "/Portfolio/static/media/8.7bb32ac8.jpg",
-    "static/media/CalculatorImg.jpg": "/Portfolio/static/media/CalculatorImg.e9f5604c.jpg",
+    "static/media/CalculatorImg.jpg": "/Portfolio/static/media/CalculatorImg.8b7246a7.jpg",
     "static/media/bluredImg.jpg": "/Portfolio/static/media/bluredImg.17441f72.jpg",
     "static/media/gitIcon.png": "/Portfolio/static/media/gitIcon.f3db7505.png"
   },
   "entrypoints": [
     "static/js/runtime-main.657ad8a3.js",
     "static/js/2.33298918.chunk.js",
-    "static/css/main.9d135b3d.chunk.css",
-    "static/js/main.e6e4e9f7.chunk.js"
+    "static/css/main.aa928abd.chunk.css",
+    "static/js/main.88e327c7.chunk.js"
   ]
 }
