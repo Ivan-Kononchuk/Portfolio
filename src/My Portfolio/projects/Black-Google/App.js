@@ -31,9 +31,17 @@ export default class Gallery extends React.Component {
 
   renderImageContent(src, index) {
     return (
-      <img onClick={(e) => this.openModal(e, index)} src={src} key={src}
-      alt='Black Google' className='googleImages pointer'/>
+      <img tabIndex='0'
+      onClick={e=> this.openModal(e, index)}
+      src={src} key={src}
+      alt='Black Google' className='googleImages pointer'
+      onKeyDown={e=> this.handleEnter(e, index)}/>
     ) 
+  }
+
+  handleEnter(e, index){
+    if (e.keyCode !== 13 || this.state.currentIndex !== null) return;
+    this.openModal(e, index);
   }
 
   openModal(e, index) {
@@ -42,16 +50,13 @@ export default class Gallery extends React.Component {
   }
 
   closeModal(e) {
-    if (e !== undefined) {
-      e.preventDefault();
-    }
     this.setState ({ currentIndex: null });
     document.body.style.overflow= 'visible';
   }
 
   findPrev(e) {
-    if (e !== undefined) {
-      e.preventDefault();
+    if (e === undefined && this.state.currentIndex === null) {
+      return;
     }
     this.setState(prevState => ({
       currentIndex: prevState.currentIndex -1
@@ -59,8 +64,8 @@ export default class Gallery extends React.Component {
   }
 
   findNext(e) {
-    if (e !== undefined) {
-      e.preventDefault();
+    if (e === undefined && this.state.currentIndex === null) {
+      return;
     }
     this.setState(prevState => ({
       currentIndex: prevState.currentIndex + 1
@@ -77,7 +82,7 @@ export default class Gallery extends React.Component {
           findNext={this.findNext} 
           hasPrev={this.state.currentIndex > 0} 
           hasNext={this.state.currentIndex + 1 < imgUrls.length} 
-          src={imgUrls[this.state.currentIndex]} 
+          src={imgUrls[this.state.currentIndex]}
         />
       </div>
     )
@@ -101,9 +106,9 @@ class GalleryModal extends React.Component {
   handleKeyDown(e) {
     if (e.keyCode === 27)
       this.props.closeModal();
-    if (e.keyCode === 37 && this.props.hasPrev)
+    else if (e.keyCode === 37 && this.props.hasPrev)
       this.props.findPrev();
-    if (e.keyCode === 39 && this.props.hasNext)
+    else if (e.keyCode === 39 && this.props.hasNext)
       this.props.findNext();
   }
   

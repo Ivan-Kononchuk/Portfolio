@@ -9,8 +9,7 @@ export default function Social(props){
 				 target='_blank'> 
 				<img onClick={props.onClick}
 						 src={gitIcon}
-						 alt="gitIcon"
-						 />
+						 alt="gitIcon"/>
 			</a>
 		</div>
 	);

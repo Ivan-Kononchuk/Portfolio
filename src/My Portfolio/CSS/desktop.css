@@ -12,14 +12,22 @@
 	}
 
 	.kbd-navigation *:focus{
-		-webkit-box-shadow: 0 14px 5px #0069FFFF;
+		-webkit-box-shadow: 0 18px 11px #0061FFFF;
 		box-shadow: 0 18px 11px #0061FFFF;
 		outline: none;
 	}
 
-	.kbd-navigation *:focus img{
-		-webkit-box-shadow: 0 14px 14px #0069FFFF;
+	.kbd-navigation div.gitIcon a:focus img{
+		-webkit-box-shadow: 0 18px 11px #0061FFFF;
 		box-shadow: 0 18px 11px #0061FFFF;
+	}
+
+	.kbd-navigation div.projectsContainer img.googleImages:focus{
+		outline: 5px solid #0061FFFF;
+		outline-offset: -5px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 	#App{
@@ -109,10 +117,6 @@
 
 	.Content table tr td{
 		padding: 24px;
-	}
-
-	.Content table tr td:hover{
-		background-color: rgba(26, 255, 167, 0.5);
 	}
 
 	.active{
@@ -312,6 +316,7 @@
 		max-height: 100vh;
 		width: 50%;
 		float: left;
+		outline: none;
 	}
 
 	.pointer{
@@ -340,6 +345,17 @@
 		outline: none;
 		background-color: rgba(0,0,0,0);
 		background-image: rgba(0,0,0,0);
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		cursor: pointer;
+		-webkit-user-drag: none;
+		-moz-user-drag: none;
+		-ms-user-drag: none;
+		-o-user-drag: none;
+		user-drag: none;
 	}
 
 	.modal-body button:hover{
@@ -394,6 +410,10 @@
 		overflow-x: hidden;
 	}
 
+	#mail-area:disabled{
+		background-color: white;
+	}
+
 	#mail-area::placeholder{
 		font-size: 50px;
 		text-align: center;
@@ -410,17 +430,16 @@
 
 	.tooltip{
 		position: relative;
-		float: left;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
 		justify-content: center;
+		margin-right: 30px;
 	}
 
 	.tooltip .tooltiptext{
-		visibility: hidden;
 		background-color: black;
 		width: 120px;
 		color: white;
@@ -432,10 +451,10 @@
 		top: 90%;
 		margin-left: -60px;
 		left: 50%;
-		z-index: 0;
+		opacity: 0;
 	}
 
-	.tooltip:active .tooltiptext{
+	.projectLink:active ~.tooltiptext{
 		top: 98%;
 	}
 
@@ -449,12 +468,13 @@
 		left: 50%;
 	}
 
-	.tooltip .projectLink:hover + .tooltiptext{
-		visibility: visible;
-	}
-
 	.fleft{
 		float: left;
+	}
+
+	.projectLink:disabled{
+		background-image: linear-gradient(lightgrey, #8E8E8EFF);
+		cursor: initial;
 	}
 
 	@media only screen and (max-width: 1611px){
@@ -492,6 +512,10 @@
 			content: '';
 			display: block;
 			clear: both;
+		}
+
+		.tooltip{
+			margin-right: 0;
 		}
 
 		#mail-area{

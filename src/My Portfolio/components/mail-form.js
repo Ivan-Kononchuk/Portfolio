@@ -6,7 +6,6 @@ export default class MailForm extends React.Component{
 	this.state = { message: ''};
 	this.handleChange = this.handleChange.bind(this);
 	this.handleSubmit = this.handleSubmit.bind(this);
-	this.sendEffect= this.sendEffect.bind(this);
   }
 
   handleChange(e){
@@ -17,6 +16,20 @@ export default class MailForm extends React.Component{
 		e.preventDefault(); // prevent reload page
 		const templateId = 'template_w1dmWdUc';
 		this.sendFeedback(templateId, {message_html: this.state.message});
+		this.setState({
+  			message: ''
+  		});
+		let submit= document.getElementById('submit');
+		let area= document.getElementById('mail-area');
+		submit.disabled= true;
+		area.disabled= true;
+  }
+
+  clearDisabledSubmit(){
+  	let submit= document.getElementById('submit');
+  	let area= document.getElementById('mail-area');
+		submit.disabled= false;
+		area.disabled= false;
   }
 
 	transition2(style){
@@ -31,9 +44,6 @@ export default class MailForm extends React.Component{
 	}
 
 	sendEffect(){
-		this.setState({
-  			message: ''
-  		});
 		const style= document.createElement('style');
 		style.type= 'text/css';
 		style.innerHTML='#mail-area::placeholder' +
@@ -49,6 +59,7 @@ export default class MailForm extends React.Component{
 	  	variables
   	).then(res =>{
   		this.sendEffect();
+  		this.clearDisabledSubmit();
   	})
   	.catch(err => console.error(
   		'Oh well, you failed. Here some thoughts on the error that occured:',
