@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+new Promise((resolve, reject)=>{
+	setTimeout(()=> reject('Whoops!'), 1000);
+})
+
+.finally(()=> alert('Promise ready'))
+.catch(err=> alert(err));
+
+// promise.catch(alert);
+
+// promise.then(
+// 	result=> alert(result),
+// 	error=> alert(error)
+// );
+
+document.getElementById('demo').innerHTML= promise;
+</script>
+	
+</body>
+</html>
