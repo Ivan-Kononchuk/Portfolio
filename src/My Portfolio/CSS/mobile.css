@@ -193,10 +193,22 @@
 		border-style: none;
 		-webkit-box-shadow: 0 12px 5px rgba(0,0,0, .3);
 		box-shadow: 0 12px 5px rgba(0,0,0, .3);
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		cursor: pointer;
+		-webkit-user-drag: none;
+		-moz-user-drag: none;
+		-ms-user-drag: none;
+		-o-user-drag: none;
+		user-drag: none;
 	}
 
 	.projectLink:hover{
-		background-image: linear-gradient(rgba(0,255,255,.9), rgb(25, 255, 167, .9));
+		background-image: linear-gradient(rgba(0,255,255,.9),
+			rgb(25, 255, 167, .9));
 		background-color: #00E589;
 	}
 
