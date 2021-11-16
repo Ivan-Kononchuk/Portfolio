@@ -26,8 +26,8 @@ export default function Projects(){
 		document.body.addEventListener('keydown', escCheck);
 
 		return ()=> {
-			elem.current.addEventListener('click', closeFullScreen); // eslint-disable-line react-hooks/exhaustive-deps
-			document.body.addEventListener('keydown', escCheck);
+			elem.current.removeEventListener('click', closeFullScreen); // eslint-disable-line react-hooks/exhaustive-deps
+			document.body.removeEventListener('keydown', escCheck);
 		}
 	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 

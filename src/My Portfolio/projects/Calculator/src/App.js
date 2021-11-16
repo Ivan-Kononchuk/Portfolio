@@ -34,7 +34,7 @@ export default function App(){
 	};
 
 	function handleKey(e){
-		if (!e.key) e.blur(); // after mouse clear to keyboard bug fix
+		if (!e.key) e.blur(); // after mouse clear to fix keyboard bug 
 		let key= e.key || e.name;
 		let x= result.split(/[*/+\-%]/);
 		if (/Enter|=/.test(key)){
