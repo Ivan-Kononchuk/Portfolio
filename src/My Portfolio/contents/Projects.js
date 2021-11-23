@@ -5,31 +5,33 @@ import blackChrome from '../projects/Black-Chrome/56756.jpg';
 import blackGoogle from '../projects/Black-Google/Images/1.jpg';
 
 export default function Projects(){
-	let elem= useRef()
+	const ref= useRef();
 
 	function openFullScreen(){
-		elem.current.classList.add('enlarge');
+		ref.current.classList.add('enlarge');
 		document.body.style.overflow= 'hidden';
 	}
 
-	function escCheck(e){
-		if (e.keyCode === 27) closeFullScreen();
-	}
-
 	function closeFullScreen(){
-		elem.current.classList.remove('enlarge');
+		ref.current.classList.remove('enlarge');
 		document.body.style.overflow= 'visible';
 	}
 
 	useEffect(()=> {
-		elem.current.addEventListener('click', closeFullScreen);
+		const elem= ref.current;
+
+		function escCheck(e){
+			if (e.keyCode === 27) closeFullScreen();
+		}
+
+		elem.addEventListener('click', closeFullScreen);
 		document.body.addEventListener('keydown', escCheck);
 
 		return ()=> {
-			elem.current.addEventListener('click', closeFullScreen); // eslint-disable-line react-hooks/exhaustive-deps
-			document.body.addEventListener('keydown', escCheck);
+			elem.removeEventListener('click', closeFullScreen);
+			document.body.removeEventListener('keydown', escCheck);
 		}
-	}, []); // eslint-disable-line react-hooks/exhaustive-deps
+	}, []); 
 
  return(
 		<div className='projectsContainer'>
@@ -56,7 +58,7 @@ export default function Projects(){
 			</div>
 
 			<div className="BlackBackgroundContenteiner">
-				<img src={blackChrome} ref={elem} id='BlackChromeBackground'
+				<img src={blackChrome} ref={ref} id='BlackChromeBackground'
 						 alt="Black Chrome" className='ImageBackground'/>
 				<div className='BlackBackgroundContent'>
 					<h1 className='BlackBackgroundHeader'>Black Chrome Theme</h1>

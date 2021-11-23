@@ -12,7 +12,7 @@ import Calculator from './projects/Calculator/CalculatorApp.js';
 import bluredImg from './img/bluredImg.jpg';
 import Gallery from './projects/Black-Google/App.js';
 
-function App(){
+export default function App(){
 	return(
 		<Router>
 			<div id="App">
@@ -39,5 +39,3 @@ function App(){
 		</Router>
 	);
 }
-
-export default App;

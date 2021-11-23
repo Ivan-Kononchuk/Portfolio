@@ -9,9 +9,22 @@
   <meta name="keywords" content="HTML, CSS, JavaScript, ReactJS" >
   <meta name="author" content="Ivan Kononchuk" >
 </head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-757NFX5QMQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-757NFX5QMQ');
+</script>
+
 <body>
 
+
 <div id="root"></div>
+
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 <script type="text/javascript">
@@ -21,15 +34,16 @@
 </script>
 
 <script type="text/javascript">
+// tab navigation
 window.addEventListener('mousedown', function(){
   document.body.classList.remove('kbd-navigation');
 });
-
 window.addEventListener('keydown', function(e){
   if(e.keyCode === 9){
     document.body.classList.add('kbd-navigation');
   }
 });
 </script>
+
 </body>
 </html>
