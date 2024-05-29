@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-transform-private-property-in-object": "^7.24.6"
+    "@babel/plugin-transform-private-property-in-object": "^7.24.6",
+    "gh-pages-deploy": "^0.5.1"
   }
 }
